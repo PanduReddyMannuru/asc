@@ -1,9 +1,8 @@
 import React from 'react'
-import { Menu } from 'antd'
+import { Menu , } from 'antd'
 import { UserOutlined,
   MessageOutlined,
   AppstoreOutlined,
-  RobotOutlined,
   SolutionOutlined, 
   TeamOutlined, 
   ShareAltOutlined,
@@ -11,9 +10,9 @@ import { UserOutlined,
 
 } from '@ant-design/icons'
 
-const MenuList = ({darkTheme}) => {
+const MenuList = () => {
   return (
-   <Menu theme={darkTheme ? 'dark' : 'light'} mode="inline" className='menu-bar'>
+   <Menu  mode="inline" className='menu-bar'>
     <Menu.Item key="Dashboard" icon={<AppstoreOutlined/>}>
     Dashboard
     </Menu.Item>
@@ -25,9 +24,6 @@ const MenuList = ({darkTheme}) => {
     </Menu.Item>
     <Menu.Item key="JobsInternships" icon={<SolutionOutlined/>}>
     Jobs & Internships
-    </Menu.Item>
-    <Menu.Item key="ResumeBot" icon={<RobotOutlined/>}>
-    Resume Bot
     </Menu.Item>
     <Menu.Item key="CommunityForums" icon={<TeamOutlined/>}>
     Community Forums
